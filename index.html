@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Ballester | Tech Innovator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3a8a, #10b981);
+            font-family: 'Roboto', sans-serif;
+        }
+        .hover-grow {
+            transition: transform 0.3s ease;
+        }
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col">
+    <header class="bg-black bg-opacity-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <h1 class="text-3xl font-bold font-orbitron">Jorge Ballester</h1>
+                <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">Open to Opportunities</span>
+            </div>
+            <nav class="space-x-4">
+                <a href="#about" class="hover:text-green-300 transition">About Me</a>
+                <a href="#projects" class="hover:text-green-300 transition">Projects</a>
+                <a href="#skills" class="hover:text-green-300 transition">Skills</a>
+                <a href="#contact" class="hover:text-green-300 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <!-- About Section -->
+        <section id="about" class="bg-black bg-opacity-60 rounded-lg p-8 mb-8 flex items-center">
+            <div class="w-2/3">
+                <h2 class="text-2xl font-bold mb-4 text-green-400">Turning Complexity into Innovation</h2>
+                <p class="text-gray-300">
+                    Hello! I'm Jorge, a passionate software developer and data scientist with a background in energy engineering.
+                    I thrive on creating software that solves real-world problems while constantly exploring new technologies.
+                    Currently, I’m focusing on AI, software development, and learning French.
+                </p>
+                <ul class="mt-4 list-disc list-inside text-gray-300">
+                    <li>🌍 Based in Lyon</li>
+                    <li>🚀 Passionate about AI, machine learning, and software development</li>
+                    <li>🌱 Always learning something new and refining my skills</li>
+                </ul>
+                <div class="mt-6 flex space-x-4">
+                    <a href="https://github.com/jorgeballester" target="_blank" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302..."/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/jorge-ballester" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5..."/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="w-1/3 flex justify-center">
+                <div class="w-48 h-48 bg-green-500 rounded-full flex items-center justify-center hover-grow">
+                    <span class="text-4xl font-bold">🚀</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-green-400">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-black bg-opacity-60 p-6 rounded-lg hover-grow">
+                    <h3 class="text-xl font-semibold mb-2 text-green-300">🧠 E2E Binary Classification with Artificial Neural Networks</h3>
+                    <p class="text-gray-300 mb-4">
+                        Showcasing an end-to-end solution for binary classification using Artificial Neural Networks (ANNs). 
+                        This project highlights data preprocessing, model training, performance evaluation, and deployment 
+                        of classification and regression applications via Streamlit.
+                    </p>
+                    <p class="text-gray-300 mb-4">
+                        Deployed applications include:
+                        <ul class="list-disc list-inside">
+                            <li><a href="https://e2e-binary-class-ann-ku6mnpgbqxjbcuprxqje8m.streamlit.app/" target="_blank" class="text-green-400 hover:text-green-300">Churn Prediction App</a></li>
+                            <li><a href="https://e2e-binary-class-ann-kfzui3bk4p8blemug22dkh.streamlit.app/" target="_blank" class="text-green-400 hover:text-green-300">Salary Prediction App</a></li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/jorballcor/E2E-Binary-Class-ANN" target="_blank" class="text-green-400 hover:text-green-300 transition">View Repository</a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-black bg-opacity-60 p-6 rounded-lg hover-grow">
+                    <h3 class="text-xl font-semibold mb-2 text-green-300">🔥 Kaggle's 5-Day Gen AI Intensive Course</h3>
+                    <p class="text-gray-300 mb-4">
+                        Participated in an intensive 5-day Generative AI course hosted by Kaggle and Google, covering cutting-edge topics such as:
+                        <ul class="list-disc list-inside">
+                            <li>Prompt engineering and foundational LLM techniques.</li>
+                            <li>Embeddings, vector databases, and search algorithms.</li>
+                            <li>Building Generative AI agents with iterative workflows.</li>
+                            <li>Domain-specific LLMs like Med-PaLM and SecLM.</li>
+                            <li>MLOps practices tailored for Generative AI using Vertex AI tools.</li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/jorballcor/Kaggle-5-Day-Gen-AI-Intensive-November-2024" target="_blank" class="text-green-400 hover:text-green-300 transition">Learn More</a>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-black bg-opacity-60 p-6 rounded-lg hover-grow">
+                    <h3 class="text-xl font-semibold mb-2 text-green-300">📧 Spam Classifier Project</h3>
+                    <p class="text-gray-300 mb-4">
+                        Developed a machine learning-based Spam Classifier that accurately detects and filters spam messages 
+                        using techniques like NLP and supervised learning models. 
+                        The project includes data preprocessing, feature extraction, and model evaluation.
+                    </p>
+                    <a href="https://github.com/jorballcor/NLP-Project-Spam-Classifier-word2vec" target="_blank" class="text-green-400 hover:text-green-300 transition">View Project</a>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-black bg-opacity-60 p-6 rounded-lg hover-grow">
+                    <h3 class="text-xl font-semibold mb-2 text-green-300">🗣️ Constructing Natural Language Processing</h3>
+                    <p class="text-gray-300 mb-4">
+                        A comprehensive exploration of text preprocessing techniques, including tokenization, stemming, lemmatization, and vectorization. This project delves into various machine learning and deep learning models for NLP tasks, providing hands-on practice and detailed insights.
+                    </p>
+                    <a href="https://github.com/jorballcor/Natural-Language-Processing-Machine-Learning-Deep-Learning" target="_blank" class="text-green-400 hover:text-green-300 transition">View Repository</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-black bg-opacity-60 rounded-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-green-400">Skills</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Programming Languages -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-green-300">Programming Languages</h3>
+                    <ul>
+                        <li>🐍 Python (Advanced)</li>
+                        <li>☕ Java (Intermediate)</li>
+                    </ul>
+                </div>
+                
+                <!-- Frameworks & Libraries -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-green-300">Frameworks & Libraries</h3>
+                    <ul>
+                        <li>⚡ FastAPI, Flask</li>
+                        <li>🧠 TensorFlow, Keras, PyTorch</li>
+                        <li>📊 NumPy, Pandas</li>
+                        <li>🔗 LangChain, LlamaIndex</li>
+                        <li>🛠️ Poetry, uv, SQLAlchemy</li>
+                        <li>🤖 OpenAI API</li>
+                    </ul>
+                </div>
+        
+                <!-- Tools, Databases & Cloud -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-green-300">Tools, Databases & Cloud</h3>
+                    <ul>
+                        <li>🐋 Docker</li>
+                        <li>🌳 Git, GitHub Actions</li>
+                        <li>🗄️ PostgreSQL, MongoDB, Neo4j</li>
+                        <li>☁ AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-black bg-opacity-60 rounded-lg p-8">
+            <h2 class="text-3xl font-bold mb-6 text-green-400">Connect With Me</h2>
+            <p class="text-gray-300 mb-4">Let’s build something amazing together! You can reach out to me through any of the platforms below:</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="https://linkedin.com/in/jorballcor" target="_blank" class="hover:text-green-300">LinkedIn</a></li>
+                <li><a href="mailto:jorge.ballcor@gmail.com" class="hover:text-green-300">Email Me</a></li>
+                <li><a href="https://jorballcor.github.io" target="_blank" class="hover:text-green-300">Visit My Website</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-black bg-opacity-70 text-white text-center py-4">
+        <p>🚀 Crafting the future, one algorithm at a time © 2024</p>
+    </footer>
+</body>
+</html>
